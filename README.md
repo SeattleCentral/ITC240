@@ -97,13 +97,13 @@ Students with documented disabilities requesting class accommodations, requiring
 
 * PHP Variables
 * PHP Data Types
-* PHP String operations
+* PHP String Operations
 * Operators and Comparisons
 
 **Week 3**
 
 * PHP Flow Control
-* Using flow control in an HTML template
+* Using Flow Control in an HTML Template
 * PHP Functions
 
 **Week 4**
@@ -115,7 +115,7 @@ Students with documented disabilities requesting class accommodations, requiring
 **Week 5**
 
 * Working with Forms
-* The DatTime object
+* The DateTime Object
 
 **Week 6**
 
@@ -129,16 +129,17 @@ Students with documented disabilities requesting class accommodations, requiring
 **Week 8**
 
 * Cookie Basics
-* PHP sessions
+* PHP Sessions
 
 **Week 9**
 
-* Putting it all together
-* Database drive web apps with PHP
+* Apache/Nginx
+* Putting it all Together
+* Database-Driven Web Apps with PHP
 
 **Week 10**
 
-* Introduction to MVC principles
+* Introduction to MVC Principles
 * The Slim Framework
 
 **Week 11**
