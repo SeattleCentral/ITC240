@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block main %}
+    <div class="row"> 
+        <div class="col">
+            <h1>Welcome to my website!</h1>
+        </div>
+        <div class="col">
+            <h3>Howdy, {{ name }}!</h3>
+        </div>
+    </div>
+
+    <footer>
+        &copy; {{ date }}
+    </footer>
+{% endblock %}
