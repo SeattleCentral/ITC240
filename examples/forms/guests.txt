@@ -1,0 +1,12 @@
+Guest: Sally Squash
+Email: n/a
+Message: My name is Sally and I love to eat squash. Which tastes kind of like pumpkin.
+
+Guest: Sally Squash
+Email: sally@gmail.com
+Message: I love squash.
+
+Guest: Turkey Tom
+Email: tom@turkey.com
+Message: I know Thanksgiving is coming up, have you ever considered going vegetarian? 
+
