@@ -7,7 +7,7 @@ class Dice
     private $currentValue;
     
     public function __construct() {
-         $this->roll();
+        $this->roll();
     }
     
     public function getCurrentValue() {
@@ -23,11 +23,11 @@ class Dice
     }
     
     public function roll() {
-        $this->currentValue = random_int(1, $this->numberOfSides);
+        $this->setCurrentValue(random_int(1, $this->numberOfSides));
     }
     
     public function draw() {
-        // ToDo: Make HTMLL repr from current value.
+        // Implement here.
     }
 }
 
