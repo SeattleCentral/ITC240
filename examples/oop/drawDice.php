@@ -71,7 +71,22 @@ class Dice
     }
     
     public function draw() {
-        // Implement here.
+        echo "<table><tbody>";
+        $map = $this->diceMap[$this->currentValue];
+        
+        foreach ($map as $rowMap) {
+            echo "<tr>";
+            foreach ($rowMap as $col) {
+                if ($col == 1) {
+                    echo "<td class=\"fill\"></td>";
+                } else {
+                    echo "<td></td>";
+                }
+            }
+            echo "</tr>";
+        }
+        
+        echo "</tbody></table>";
     }
 }
 
@@ -79,9 +94,16 @@ class Dice
 class BoardGameDice extends Dice 
 {
     protected $numberOfSides = 20;
+    
+    public function draw() {
+        echo "<h1 class=\"dice\">" . $this->getCurrentValue() . "</h1>";
+    }
 }
 
-$myDie = new Dice();
+$dieOne = new Dice();
+$dieTwo = new Dice();
+
+$fancyDie = new BoardGameDice();
 
 ?>
 
@@ -104,6 +126,14 @@ $myDie = new Dice();
             background-color: #FFF;
         }
         
+        .dice {
+            width: 84px;
+            height: 84px;
+            padding: 8px;
+            text-align: center;
+            border: 1px solid #CCC;
+        }
+        
         .fill {
             background-color: #000;
             border-radius: 10px;
@@ -113,45 +143,12 @@ $myDie = new Dice();
 <body>
     <h1>Acme Dice Roller!</h1>
     
-    <table>
-        <tbody>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td class="fill"></td>
-                <td></td>
-                <td class="fill"></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td class="fill"></td>
-                <td></td>
-                <td class="fill"></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </tbody>
-    </table>
+    <?php $dieOne->draw(); ?>
+    
+    <?php $dieTwo->draw(); ?>
+    
+    <?php $fancyDie->draw(); ?>
+    
 </body>
 </html>
 
