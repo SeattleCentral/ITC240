@@ -22,15 +22,3 @@ function connectDB() {
     return null;
 }
 
-$db = connectDB();
-
-if (null) {
-    echo "UH OH."; die();
-}
-$query = $db->prepare('SELECT * FROM people');
-$query->execute();
-$results = $query->fetchAll(PDO::FETCH_ASSOC);
-
-foreach ($results as $person) {
-    echo "<h3>".$person['name']."</h3>";
-}
