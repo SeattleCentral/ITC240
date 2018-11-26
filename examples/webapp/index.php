@@ -19,24 +19,6 @@ if ($db == null) {
     <title>People</title>
 </head>
 <body>
-    <?php
-    
-        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-            if (isset($_POST['name'])) {
-                $name = $_POST['name'];
-                $addPerson = $db->prepare(
-                    "INSERT INTO people (name) VALUES (:name)"
-                );
-                $success = $addPerson->execute([
-                    "name" => $name
-                ]);
-                if ($success) {
-                    echo "<h3>Person added, $name</h3>";
-                }
-            }
-        }
-    ?>
-    
     <h1>People List</h1>
     
     <ul>
@@ -52,20 +34,9 @@ if ($db == null) {
             }
         ?>
     </ul>
-    
-    <hr>
-    
-    <h2>
-        Add New Person
-    </h2>
-    <form method="post" action="">
-        <p>
-            <label for="name">Person Name:</label>
-            <input type="text" name="name" value="" />
-        </p>
-        <p>
-            <input type="submit" value="Submit" />
-        </p>
-    </form>
+
+    <a href="./members.php">
+        Go to Members Page.
+    </a>
 </body>
 </html>
