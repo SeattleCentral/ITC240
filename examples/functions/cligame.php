@@ -5,10 +5,10 @@ echo "\n".
      "============================================\n\n";
      
 echo "To start your journey, press [Enter]\n";
-$answer = fgets(STDIN);
-level1($answer);
+fgets(STDIN);
+level1();
 
-function level1($answer) {
+function level1($answer=null) {
     switch ($answer) {
         case 1:
             echo "You died of dysentery.\n";
@@ -24,9 +24,26 @@ function level1($answer) {
     }
 }
 
-function level2() {
-    echo "\n".
-         "============================\n".
-         "| You won! Congratulations |\n".
-         "============================\n";
+function level2($answer=null) {
+    switch ($answer) {
+        case 1:
+            echo "You died of dysentery.\n";
+            break;
+        case 2:
+            echo "Go back to where you were.\n";
+            level1();
+            break;
+        case 3:
+            echo "Great spell! The road is clear.\n";
+            finish();
+            break;
+        default:
+            echo "You come across a road block.\n".
+                 "Do you [1] Wait, [2] Turn around, [3] Cast a spell? ";
+            level2(fgets(STDIN));
+    }
+}
+
+function finish() {
+    echo "\nYou have reached the conclusion of your journey. Congratulations!\n\n";
 }
