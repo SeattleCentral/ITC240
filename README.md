@@ -56,11 +56,11 @@ To receive full credit, your completed assignment should perform the required fu
 
 Students will have 1 additional week to correct code rejected for not meeting style guidelines. 
 
-Assignments are worth 20 points each.
+Assignments are worth 10 points each.
 
 ## Quizzes/Exams
 
-There will be multiple Quizzes, a Midterm, and a Final Exam. Quizzes will normally be administered in class and may be “group efforts.” Missing a Quiz due to absence will be addressed on a case-by-case basis. In most cases, makeups will be allowed unless absences become problematic. The Midterm and Final Exam will include multiple choice questions, short answer, writing short code snippets, and identifying errors in printed code. Quizzes are worth 20 points each. The Midterm and Final Exam are worth 100 points each.
+There will be Quizzes and a Final Exam. Quizzes will normally be administered in class and may be “group efforts.” Missing a Quiz due to absence will be addressed on a case-by-case basis. In most cases, makeups will be allowed unless absences become problematic. The Final Exam will include multiple choice questions, short answer, writing short code snippets, and identifying errors in printed code. Quizzes are worth 10 points each. The Final Exam is worth 35 points.
 
 ## Materials
 
@@ -148,7 +148,7 @@ Students with documented disabilities requesting class accommodations, requiring
 
 **Final**
 
-* December 11th, 2018
+* December 10th, 2018 at 3:30PM (or by appointment)
 
 **\*No class on**<br>
 November 12th, 2018 - Veterans Day<br>
